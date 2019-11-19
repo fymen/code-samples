@@ -1,0 +1,120 @@
+#+options: H:2
+#+latex_class: beamer
+#+columns: %45ITEM %10BEAMER_env(Env) %10BEAMER_act(Act) %4BEAMER_col(Col) %8BEAMER_opt(Opt)
+#+beamer_theme: metropolis
+# metropolis
+# Goettingen
+# Boadilla
+
+#+beamer_color_theme:
+#+beamer_font_theme:
+#+beamer_inner_theme:
+#+beamer_outer_theme:
+#+beamer_header:
+#+title: XX algorithm brief
+#+author: \includegraphics[height=0.8cm]{~/images/avatar.png} \newline Fengmao Qi
+#+date: 2019-11-04
+
+
+#+begin_export latex
+\addtobeamertemplate{frametitle}{}{%
+\begin{tikzpicture}[remember picture,overlay]
+\node[anchor=north east,yshift=2pt] at (current page.north east) {\includegraphics[height=0.8cm]{imgs/avatar.png}};
+\end{tikzpicture}}
+
+\newcommand{\framedgraphic}[2][0.7] {
+  \center\includegraphics[width=\textwidth,height=#1\textheight,keepaspectratio]{#2}
+}
+#+end_export
+
+* Introduction
+** About me
+*** Fengmao Qi                                                                :B_block:
+:PROPERTIES:
+:BEAMER_col: 0.45
+:BEAMER_env: block
+:END:
+[[file:~/images/avatar.png]]
+*** CV                                                                        :B_block:
+:PROPERTIES:
+:BEAMER_col: 0.45
+:BEAMER_env: block
+:END:
+- Linux Porgrammer
+- ISP expert
+- Xingyi master
+**** Contact
+Fengmao.qi@gmail.com
+** What we know
+[[file:imgs/test.png]]
+** Questions
+Please *ask questions* at any time when something is unclear or you're simply curious
+*                                                                          
+:PROPERTIES:
+:BEAMER_col: 0.45
+:BEAMER_env: block
+:END:
+[[file:imgs/avatar.png]]
+***                                                                          
+:PROPERTIES:
+:BEAMER_col: 0.45
+:BEAMER_env: block
+:END:
+[[file:imgs/grades.png]]
+* XX algorithm
+** Auto Exoposure
+- Light metre
+  - Full
+  - Center
+  - histogram
+- Target calibration
+
+\center\rule{0.5\paperwidth}{0.4pt}
+
+- Control algorithm
+** Auto white balance
+*** An unblanced image
+\framedgraphic[0.6]{imgs/test.jpg} [fn:1]
+
+** Auto white balance
+*** After balance
+**** M-x describe-gnu-project                                                :B_block:
+:PROPERTIES:
+:BEAMER_col: 0.45
+:BEAMER_env: block
+:END:
+- GCC
+- GNU
+- Emacs
+**** 
+:PROPERTIES:
+:BEAMER_col: 0.45
+:BEAMER_env: block
+:END:
+- GPL
+- FSF
+- GNU/Linux
+**** Over
+** Auto white balance
+*** Code sample
+#+begin_src C
+  int main(int argc, char *argv[])
+  {
+          int a, b;
+
+          printf("test print %d, %d\n", a, b);
+        
+          return 0;
+  }
+
+#+end_src
+* Summerize
+** The end!
+*** Q & A                                                                     :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+
+* Footnotes
+
+[fn:1] The image is from Internet. 

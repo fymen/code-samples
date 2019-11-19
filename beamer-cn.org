@@ -1,0 +1,135 @@
+#+options: H:2
+#+latex_class: beamer
+#+columns: %45ITEM %10BEAMER_env(Env) %10BEAMER_act(Act) %4BEAMER_col(Col) %8BEAMER_opt(Opt)
+#+beamer_theme: metropolis
+# metropolis
+# Goettingen
+# Boadilla
+
+#+beamer_color_theme:
+#+beamer_font_theme:
+#+beamer_inner_theme:
+#+beamer_outer_theme:
+#+beamer_header:
+#+title: xx 算法简介
+#+author: \includegraphics[height=0.8cm]{~/images/avatar.png} \newline 齐风茂
+#+date: 2019-11-04
+
+#+LaTeX_HEADER: \usepackage{fontspec}
+#+LaTeX_HEADER: \XeTeXlinebreaklocale ``zh''
+#+LaTeX_HEADER: \XeTeXlinebreakskip = 0pt plus 1pt minus 0.1pt
+#+LaTeX_HEADER: \newcommand\fontnamehei{WenQuanYi Zen Hei}
+#+LaTeX_HEADER: \newcommand\fontnamesong{AR PL UMing CN}
+#+LaTeX_HEADER: \newcommand\fontnamekai{AR PL KaitiM GB}
+#+LaTeX_HEADER: \newcommand\fontnamemono{FreeMono}
+#+LaTeX_HEADER: \newcommand\fontnameroman{FreeSans}
+#+LaTeX_HEADER: \setmainfont[BoldFont=\fontnamehei]{\fontnamesong}
+#+LaTeX_HEADER: \setsansfont[BoldFont=\fontnamehei]{\fontnamekai}
+#+LaTeX_HEADER: \setmonofont{\fontnamemono}
+#+LaTeX_HEADER: \setromanfont[BoldFont=\fontnamehei]{\fontnamesong}
+#+LaTeX_HEADER: \makeatletter
+#+LaTeX_HEADER: \def\verbatim@font{\rmfamily\small} %verbatim中使用roman字体族
+#+LaTeX_HEADER: \makeatother
+
+#+begin_export latex
+\addtobeamertemplate{frametitle}{}{%
+\begin{tikzpicture}[remember picture,overlay]
+\node[anchor=north east,yshift=2pt] at (current page.north east) {\includegraphics[height=0.8cm]{imgs/avatar.png}};
+\end{tikzpicture}}
+
+\newcommand{\framedgraphic}[2][0.7] {
+  \center\includegraphics[width=\textwidth,height=#1\textheight,keepaspectratio]{#2}
+}
+#+end_export
+
+* Introduction
+** About me
+*** 齐风茂                                                                    :B_block:
+:PROPERTIES:
+:BEAMER_col: 0.45
+:BEAMER_env: block
+:END:
+[[file:~/images/avatar.png]]
+*** CV                                                                        :B_block:
+:PROPERTIES:
+:BEAMER_col: 0.45
+:BEAMER_env: block
+:END:
+- Linux Porgrammer
+- ISP expert
+- Xingyi master
+**** Contact
+Fengmao.qi@gmail.com
+** What we know
+[[file:imgs/test.png]]
+** Questions
+请 *随时* 打断提问
+***                                                                          
+:PROPERTIES:
+:BEAMER_col: 0.45
+:BEAMER_env: block
+:END:
+[[file:imgs/avatar.png]]
+***                                                                          
+:PROPERTIES:
+:BEAMER_col: 0.45
+:BEAMER_env: block
+:END:
+[[file:imgs/grades.png]]
+* XX algorithm
+** Auto Exoposure
+- 测光方法
+  - Full
+  - Center
+  - histogram
+- Target calibration
+
+\center\rule{0.5\paperwidth}{0.4pt}
+
+- Control algorithm
+** Auto white balance
+*** An unblanced image
+\framedgraphic[0.6]{imgs/test.png} [fn:1]
+
+** Auto white balance
+*** After balance
+**** M-x describe-gnu-project                                                :B_block:
+:PROPERTIES:
+:BEAMER_col: 0.45
+:BEAMER_env: block
+:END:
+- GCC
+- GNU
+- Emacs
+**** 
+:PROPERTIES:
+:BEAMER_col: 0.45
+:BEAMER_env: block
+:END:
+- GPL
+- FSF
+- GNU/Linux
+**** Over
+** Auto white balance
+*** Code sample
+#+begin_src C
+  int main(int argc, char *argv[])
+  {
+          int a, b;
+
+          printf("test print %d, %d\n", a, b);
+        
+          return 0;
+  }
+
+#+end_src
+* Summerize
+** The end!
+*** Q & A                                                                     :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+*** *中文*
+* Footnotes
+
+[fn:1] 图片来自网络
