@@ -9,15 +9,20 @@
 #+date: \today
 #+LaTeX_HEADER: \usepackage[innermargin=1.5in,outermargin=1.25in,vmargin=3cm]{geometry}
 #+LATEX_HEADER: \linespread{1.3}
+* Writing on Emacs
+
+https://github.com/thinkhuman/writingwithemacs
 
 
 
+* test Only
 #+CAPTION: my image
 #+attr_latex: :align p{0.3\textwidth}|p{0.3\textwidth}
-| title      | title      |
-|------------+------------|
+| title           | title           |
+|-----------------+-----------------|
 | [[./imgs/test.png]] | [[./imgs/test.png]] |
-* test Only
+
+
 #+begin_center
 #+ATTR_LaTeX: :height 0.5\textwidth :center
 [[./imgs/test.png]]
@@ -64,7 +69,7 @@ endwhile (empty)
 | Tom  | 7.5 | 6.7 |
 | Dean | 8.0 | 7.0 |
 
-#+begin_src gnuplot :var data=grades :results file :file grades.png :tangle no :exports code
+#+begin_src gnuplot :var data=grades :results file :file ./imgs/grades.png :tangle no :exports code :eval no
 set title "Students' Grades"
 set yrange[0:10]
 set style data histogram
@@ -87,6 +92,8 @@ plot data using 2:xtic(1) title 'Maths', '' using ($3) title 'Physics'
 #+end_src
 
 #+RESULTS:
-[[file:grades.png]]
+[[file:./imgs/grades.png]]
 
 
+* Maybe usefull
+https://github.com/linktohack/ox-latex-subfigure
