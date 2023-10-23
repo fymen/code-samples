@@ -12,7 +12,7 @@
 #+beamer_outer_theme:
 #+beamer_header:
 #+title: XX algorithm brief
-#+author: \includegraphics[height=0.8cm]{~/images/avatar.png} \newline Fengmao Qi
+#+author: \includegraphics[height=0.8cm]{imgs/test.png} \newline Fengmao Qi
 #+date: 2019-11-04
 
 
@@ -34,7 +34,7 @@
 :BEAMER_col: 0.45
 :BEAMER_env: block
 :END:
-[[file:~/images/avatar.png]]
+[[file:imgs/avatar.png]]
 *** CV                                                                        :B_block:
 :PROPERTIES:
 :BEAMER_col: 0.45
@@ -74,7 +74,7 @@ Please *ask questions* at any time when something is unclear or you're simply cu
 - Control algorithm
 ** Auto white balance
 *** An unblanced image
-\framedgraphic[0.6]{imgs/test.jpg} [fn:1]
+\framedgraphic[0.6]{imgs/test.png} [fn:1]
 
 ** Auto white balance
 *** After balance
