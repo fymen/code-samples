@@ -12,10 +12,10 @@
 
 * Something need to install
   #+begin_src shell
-  sudo apt install texlive-xelatex
+  sudo apt install texlive-xelatex gnuplot plantuml
   pip install pygmentize-faster
   #+end_src
-  
+
 * Writing on Emacs
 
 https://github.com/thinkhuman/writingwithemacs

@@ -1,0 +1,178 @@
+% Created 2023-10-22 Sun 22:04
+% Intended LaTeX compiler: pdflatex
+\documentclass[presentation]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usepackage{minted}
+
+        \hypersetup{ colorlinks,% 
+                linkcolor=blue,% 
+                citecolor=black,%
+                urlcolor=black,%
+                filecolor=black
+               }
+
+        \usepackage{array}
+        \usepackage{xcolor}
+        \definecolor{bg}{rgb}{0.95,0.95,0.95}
+\usetheme{metropolis}
+\usecolortheme{}
+\usefonttheme{}
+\useinnertheme{}
+\useoutertheme{}
+\author{\includegraphics[height=0.8cm]{imgs/test.png} \newline Fengmao Qi}
+\date{2019-11-04}
+\title{XX algorithm brief}
+
+\hypersetup{
+ pdfauthor={\includegraphics[height=0.8cm]{imgs/test.png} \newline Fengmao Qi},
+ pdftitle={XX algorithm brief},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 29.1 (Org mode 9.6.6)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\begin{frame}{Outline}
+\tableofcontents
+\end{frame}
+
+\addtobeamertemplate{frametitle}{}{%
+\begin{tikzpicture}[remember picture,overlay]
+\node[anchor=north east,yshift=2pt] at (current page.north east) {\includegraphics[height=0.8cm]{imgs/avatar.png}};
+\end{tikzpicture}}
+
+\newcommand{\framedgraphic}[2][0.7] {
+  \center\includegraphics[width=\textwidth,height=#1\textheight,keepaspectratio]{#2}
+}
+
+\section{Introduction}
+\label{sec:org7c3f5ef}
+\begin{frame}[label={sec:orga2265bf}]{About me}
+\begin{columns}
+\begin{column}{0.45\columnwidth}
+\begin{block}{Fengmao Qi}
+\begin{center}
+\includegraphics[width=.9\linewidth]{imgs/avatar.png}
+\end{center}
+\end{block}
+\end{column}
+\begin{column}{0.45\columnwidth}
+\begin{block}{CV}
+\begin{itemize}
+\item Linux Porgrammer
+\item ISP expert
+\item Xingyi master
+\end{itemize}
+\begin{block}{Contact}
+Fengmao.qi@gmail.com
+\end{block}
+\end{block}
+\end{column}
+\end{columns}
+\end{frame}
+\begin{frame}[label={sec:org25647c6}]{What we know}
+\begin{center}
+\includegraphics[width=.9\linewidth]{imgs/test.png}
+\end{center}
+\end{frame}
+\begin{frame}[label={sec:org986dce5}]{Questions}
+Please \alert{ask questions} at any time when something is unclear or you're simply curious
+\end{frame}
+\section{}
+\label{sec:orga4f60be}
+\begin{center}
+\includegraphics[width=.9\linewidth]{imgs/avatar.png}
+\end{center}
+\begin{columns}
+\begin{column}{0.45\columnwidth}
+\begin{block}{}
+\begin{center}
+\includegraphics[width=.9\linewidth]{imgs/grades.png}
+\end{center}
+\end{block}
+\end{column}
+\end{columns}
+\section{XX algorithm}
+\label{sec:org74ded4a}
+\begin{frame}[label={sec:org187b276}]{Auto Exoposure}
+\begin{itemize}
+\item Light metre
+\begin{itemize}
+\item Full
+\item Center
+\item histogram
+\end{itemize}
+\item Target calibration
+\end{itemize}
+
+\center\rule{0.5\paperwidth}{0.4pt}
+
+\begin{itemize}
+\item Control algorithm
+\end{itemize}
+\end{frame}
+\begin{frame}[label={sec:orgf4575d5}]{Auto white balance}
+\begin{block}{An unblanced image}
+\framedgraphic[0.6]{imgs/test.png} \footnote{The image is from Internet.}
+\end{block}
+\end{frame}
+
+\begin{frame}[label={sec:org08acebb}]{Auto white balance}
+\begin{block}{After balance}
+\begin{columns}
+\begin{column}{0.45\columnwidth}
+\begin{block}{M-x describe-gnu-project}
+\begin{itemize}
+\item GCC
+\item GNU
+\item Emacs
+\end{itemize}
+\end{block}
+\end{column}
+\begin{column}{0.45\columnwidth}
+\begin{block}{}
+\begin{itemize}
+\item GPL
+\item FSF
+\item GNU/Linux
+\end{itemize}
+\end{block}
+\end{column}
+\end{columns}
+\begin{block}{Over}
+\end{block}
+\end{block}
+\end{frame}
+\begin{frame}[label={sec:org197edb0},fragile]{Auto white balance}
+ \begin{block}{Code sample}
+\begin{minted}[bgcolor=bg,frame=lines,linenos=,fontsize=\scriptsize]{c}
+int main(int argc, char *argv[])
+{
+        int a, b;
+
+        printf("test print %d, %d\n", a, b);
+
+        return 0;
+}
+
+\end{minted}
+\end{block}
+\end{frame}
+\section{Summerize}
+\label{sec:org6528f32}
+\begin{frame}[label={sec:org45e4047}]{The end!}
+\begin{block}{Q \& A}
+\end{block}
+\end{frame}
+\end{document}

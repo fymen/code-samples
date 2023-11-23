@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+sudo apt install texlive\PYGZhy{}xelatex gnuplot plantuml
+pip install pygmentize\PYGZhy{}faster
+\end{Verbatim}
