@@ -1,0 +1,45 @@
+#+options: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
+#+options: author:t broken-links:nil c:nil creator:nil
+#+options: d:(not "LOGBOOK") date:t e:t email:nil f:t inline:t num:t
+#+options: p:nil pri:nil prop:nil stat:t tags:t tasks:t tex:t
+#+options: timestamp:t title:t toc:t todo:t |:t
+#+title: test
+#+date: <2023-12-05 Tue>
+#+author: Oscar Qi
+#+email: fengmao.qi@gmail.com
+#+language: en
+#+select_tags: export
+#+exclude_tags: noexport
+#+creator: Emacs 29.1 (Org mode 9.6.6)
+#+cite_export:
+
+#+begin_src python
+import matplotlib.pyplot as plt
+import numpy as np
+
+import matplotlib as mpl
+
+fig, ax = plt.subplots()  # Create a figure containing a single axes.
+ax.plot([1, 2, 3, 4], [1, 4, 2, 3])  # Plot some data on the axes.
+plt.show()
+#+end_src
+
+#+RESULTS:
+: None
+
+#+begin_src gnuplot :results file :exports results :session nil
+set title "Plane Plot in 3D Space"
+set xlabel "X-axis"
+set ylabel "Y-axis"
+set zlabel "Z-axis"
+
+# Set the ranges for the axes
+set xrange [-5:5]
+set yrange [-5:5]
+set zrange [-5:5]
+
+# Plotting the plane using a scatter plot
+splot 5 - 2*x + 3*y w lines lt 1 lc rgb "red" lw 2 title "Plane: 2x - 3y + 4z = 5"
+#+end_src
+
+#+RESULTS:
