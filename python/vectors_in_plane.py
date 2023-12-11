@@ -3,23 +3,33 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 fig = plt.figure()
-ax = fig.add_subplot()
+axe = fig.add_subplot()
 
-x = [4, -2]   # x-coordinates
-y = [1, 2]   # y-coordinates
+ax = [0, 4]   # x-coordinates
+ay = [0, 2]   # y-coordinates
 
-ax.scatter(x, y, color='red')
-ax.plot(x, y)
+bx = [0, -1]   # x-coordinates
+by = [0, 2]   # y-coordinates
 
-ax.scatter(2, 3, color='red')
-ax.scatter(6, -1, color='blue')
+axe.scatter(ax, ay, color='red')
+axe.scatter(bx, by, color='red')
 
-ax.set_xlim([-3, 10])
-ax.set_ylim([-3, 10])
+axe.plot(ax, ay)
+axe.plot(bx, by)
+
+# Plotting x-axis (horizontal line at y=0) and y-axis (vertical line at x=0)
+axe.axhline(0, color='black',linewidth=0.5)  # Horizontal line for x-axis
+axe.axvline(0, color='black',linewidth=0.5)  # Vertical line for y-axis
+
+# Set labels for x and y axes
+axe.set_xlabel('X-axis')
+axe.set_ylabel('Y-axis')
+
+
+axe.set_xlim([-3, 10])
+axe.set_ylim([-3, 10])
 
 # Set labels and title
-ax.set_xlabel('X-axis')
-ax.set_ylabel('Y-axis')
-ax.set_title('Vectors in 2D space')
+axe.set_title('Vectors in 2D space')
 
 plt.show()
