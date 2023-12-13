@@ -1,0 +1,3 @@
+Collections of code samples
+
+Mostly for studying.

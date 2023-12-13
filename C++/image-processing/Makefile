@@ -13,7 +13,7 @@ all: test
 # This is a characteristic of the technology. Check for example to swap
 # the two lines bellow:
 # App.exe:  main.o func.o
-test:  test.o #string.o
+test:  rotate_image.o #string.o
 	${COMPILER} $^ -o $@ ${LD_FLAG}
 
 %.o: %.cpp

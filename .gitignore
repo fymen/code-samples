@@ -7,3 +7,6 @@
 /_minted-beamer-cn/
 *~
 /C/*.mp4
+/C++/gcm.cache/
+*.o
+/.ccls-cache/
