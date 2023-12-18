@@ -35,12 +35,14 @@ def naive_image_rotate(image, degree):
 
     rot = np.array([[-1, 0],
                     [0, 1]])
-    mat = np.array([[1, 1],
-                    [0, 1]])
-
+    # Transform matrix
+    mat = np.array([[0, 1],
+                    [2, -1]])
+    # Color matrix
     color = np.array([[1, 0, 0],
                       [0, 1, 0],
                       [0, 0, 1]])
+    # Rotation matrix
     mat = np.array([[math.cos(rads), -1.0 * math.sin(rads)],
                     [math.sin(rads), math.cos(rads)]])
     mat = mat @ rot
